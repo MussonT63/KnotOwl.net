@@ -1,1 +1,1 @@
-document.write( "<p style='text-align: right;'> This is in the footer tag - knotowl.net:10/ </p>" )
+document.write( "<p style='text-align: right;'>knotowl.net:10</p>" )

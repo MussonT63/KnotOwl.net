@@ -29,7 +29,7 @@ div { display: flex; }
 
 /* Class added by JavaScript to make menu visible */
 .nav-menu.active { right: 0; }
-a:link.nav-link, a:visited.nav-link, a:hover.nav-link, a:active.nav-link   , .nav-link {
+a:link.nav-link, a:visited.nav-link, a:hover.nav-link, a:active.nav-link, .nav-link {
     color: white;
     text-decoration: none;
 }
