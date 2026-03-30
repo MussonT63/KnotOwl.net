@@ -12,35 +12,38 @@ const multiLineMenu = `
       <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
       <li class="nav-item" onclick="mySubMenu(1)">Advancement
         <ul id="sub-menu-1" class="sub-menu">
-          <li class=sub-item> <a class="nav-link" href="/Adv/Eagle/">Eagle</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/Adv/Venturing/">Venturing</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/Adv/FAQ/">FAQ</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Eagle/">Eagle</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Venturing/">Venturing</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/FAQ/">FAQ</a> </li>
         </ul>
       </li>
       <li class="nav-item" onclick="mySubMenu(2)">Chief Okemos
         <ul id="sub-menu-2" class="sub-menu">
-          <li class=sub-item> <a class="nav-link" href="/Adv/Reports/">Reports</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/Adv/Laurels/">Laurels</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/Adv/MBCinfo/">MBC Info</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/Adv/Calendar/">Calendar</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/Adv/Misc/">Misc</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Reports/">Reports</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Laurels/">Laurels</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/MBCinfo/">MBC Info</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Calendar/">Calendar</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Misc/">Misc</a> </li>
         </ul>
       </li>
       <li class="nav-item" onclick="mySubMenu(3)">KnotMasters
         <ul id="sub-menu-3" class="sub-menu">
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/">KnotMasters</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/1-Apprentice_White.html">Apprentice</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/2-Knotter_Yellow.html">Knotter</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/3-Hitcher_Red.html">Hitcher</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/4-Master_Blue.html">Master</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/5-Owl_Green.html">Owl</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/L-Lasher_Overhand_in_ends.html">Lasher</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/M-Maker_Overhand_in_bight.html">Maker</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/0-Rules.html">Rules</a> </li>
-          <li class=sub-item> <a class="nav-link" href="/KnotMasters/Z-Definitions.html">Definitions</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/">KnotMasters</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/1-Apprentice_White.html">Apprentice</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/2-Knotter_Yellow.html">Knotter</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/3-Hitcher_Red.html">Hitcher</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/4-Master_Blue.html">Master</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/5-Owl_Green.html">Owl</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/L-Lasher_Overhand_in_ends.html">Lasher</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/M-Maker_Overhand_in_bight.html">Maker</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/0-Rules.html">Rules</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/KnotMasters/Z-Definitions.html">Definitions</a> </li>
         </ul>
       </li>
       <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
+
+      <li class="sub-item"> <hr> </li>
+      <li class="nav-item"> <a class="nav-link" href="/Migration.html">Migration</a> </li>
     </ul><!-- Menu End -->
   </div>
 </nav>
