@@ -1,0 +1,51 @@
+<nav class="navbar">
+
+  <div> <a href="/" class="nav-branding"><img alt="Wood Badge Owl" width="35" src="/WoodBadgeOwl.svg"></a> </div><!-- Favicon site logo -->
+
+  <div> <h2 id="siteTitle">KnotOwl</h2> </div><!-- Section title -->
+
+  <div><!-- Hamburger button using semantic HTML -->
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="bar">&nbsp;</span>
+      <span class="bar">&nbsp;</span>
+      <span class="bar">&nbsp;</span>
+    </button><!-- Button -->
+
+    <ul class="nav-menu" id="nav-menu"><!-- Menu Start -->
+      <li class="nav-item"> <a class="nav-link" href="/">Home</a> </li>
+      <li class="nav-item" onclick="mySubMenu(1)">Advancement
+        <ul id="sub-menu-1" class="sub-menu">
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Eagle/">Eagle</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/Venturing/">Venturing</a> </li>
+          <li class="sub-item"> <a class="nav-link" href="/Adv/FAQ/">FAQ</a> </li>
+        </ul>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="/about.html">About</a> </li>
+    </ul><!-- Menu End -->
+
+  </div>
+
+</nav>
+
+Potential CSS issues in menu.css
+* margin 0
+* margin 0
+box-sizing border-box -- I don't know what this does
+h1, h2 center
+
+Each of these classes need a new name so they actually make sense!
+Move <header> into the js.
+ 
+	  <header> <script type="text/javascript" src="/js/menu.js"></script> </header>
+
+header-bar         <nav    class="navbar"       > - the top menu bar
+header-img         <a      class="nav-branding" > - the image in the menu bar
+header-title       </h2    id="siteTitle"       > - the page title in the menu bar - need a class
+header-menu        <button class="hamburger"    > - the hamburger menu in the menu bar
+hamburger-bar      <span   class="bar"          > - a layer in the hamburger menu
+hamburger-menu     <ul     class="nav-menu"     >
+hamburger-item     <li     class="nav-item"     >
+hamburger-link     <a      class="nav-link"     >
+hamburger-menu-sub <ul     class="sub-menu"     >
+hamburger-item-sub <li     class="sub-item"     >

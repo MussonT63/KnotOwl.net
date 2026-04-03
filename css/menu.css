@@ -1,23 +1,11 @@
 /* Basic Reset and Styling */
-/*
-*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;			/* Move into Menu bits */
+    padding: 0;			/* Move into Menu bits */
+    box-sizing: border-box;	/* Move into Menu bits */
 }
 
-h1, h2 { text-align: center; }
-
-/* ul, ol { list-style-type: none; } moved to nav-item & sub-item so it didn't affet everything */
-.sub-menu {
-      text-align: left;
-      margin-left: 50%;
-      display: none;
-}
-.red { color: red; }
-
-.navbar {
+.header-bar, .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,23 +13,20 @@ h1, h2 { text-align: center; }
   background-color: #333;
   color: white; /* font color */
 }
-div { display: flex; }
+div { display: flex; } /* What does this do? */
 
-/* Class added by JavaScript to make menu visible */
-.nav-menu.active { right: 0; }
-a:link.nav-link, a:visited.nav-link, a:hover.nav-link, a:active.nav-link, .nav-link {
-    color: white;
-    text-decoration: none;
-}
+/* .header-img */
+
+.header-title, h2 { text-align: center; }
 
 /* Hamburger Icon Styling */
-.hamburger {
+.header-menu, .hamburger {
   /* Hide by default on desktop */
     background: none;
     border: none;
     cursor: pointer;
 }
-.bar {
+.hamburger-bar, .bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -49,10 +34,11 @@ a:link.nav-link, a:visited.nav-link, a:hover.nav-link, a:active.nav-link, .nav-l
     background-color: white;
     transition: 0.4s; /* */
 }
+.hamburger-menu.active, .nav-menu.active { right: 0; } /* What does this .active do? */
 
 /* default (mobile/narrow) settings start */
 body { background-color: blue; }
-.nav-menu {
+.hamburger-menu, .nav-menu {
   display: flex;
   list-style: none;
   position: fixed;
@@ -65,14 +51,23 @@ body { background-color: blue; }
   transition: 0.3s;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.nav-item {
-  margin: 15px 0;
+.hamburger-item, .nav-item {
+  margin: 15px 0; /* This is the margin around nav-items */
   list-style-type: none; 
-} /* This is the margin around nav-items */
-.sub-item {
-  margin-top: 5px;
+}
+a:link.hamburger-link, a:visited.hamburger-link, a:hover.hamburger-link, a:active.hamburger-link, .hamburger-link, a:link.nav-link, a:visited.nav-link, a:hover.nav-link, a:active.nav-link, .nav-link {
+    color: white;
+    text-decoration: none;
+}
+.hamburger-menu-sub, .sub-menu {
+  text-align: left;
+  margin-left: 50%;
+  display: none;
+}
+.hamburger-item-sub, .sub-item {
+  margin-top: 5px; /* This is the margin around sub-items */
   list-style-type: none; 
-} /* This is the margin around sub-items */
+}
 /* default (mobile/narrow) settings end */
 /* -------------------------------------------------- */
 /* wider screen (desktop/wide) settings start */
@@ -84,11 +79,23 @@ body { background-color: blue; }
       background-color: blue;
   }
   body { background-color: silver; }
-  /* .nav-item { margin: 15px; } This is the margin around menu items */
 }
 /* wider screen (desktop/wide) settings end */
 
+@media only screen and (min-width: 600px) { } /* what does this do? */
+/* .red { color: red; } */
 
-/* @media only screen and (max-width: 600px) { */
-@media only screen and (min-width: 600px) {
-}
+/*
+ * Renaming the Class names...
+	.header-bar,         <nav    class="navbar"       > - the top menu bar
+	NotUsed... .header-img,         <a      class="nav-branding" > - the image in the menu bar
+	.header-title,       </h2    id="siteTitle"       > - the page title in the menu bar - need a class
+	.header-menu,        <button class="hamburger"    > - the hamburger menu in the menu bar
+	.hamburger-bar,      <span   class="bar"          > - a layer in the hamburger menu
+	.hamburger-menu,     <ul     class="nav-menu"     >
+	.hamburger-item,     <li     class="nav-item"     >
+	.hamburger-link,     <a      class="nav-link"     >
+	.hamburger-menu-sub, <ul     class="sub-menu"     >
+	.hamburger-item-sub, <li     class="sub-item"     
+*/
+
