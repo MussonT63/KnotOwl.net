@@ -1,8 +1,10 @@
 /* Basic Reset and Styling */
 * {
-    margin: 0;			/* Move into Menu bits */
-    padding: 0;			/* Move into Menu bits */
-    box-sizing: border-box;	/* Move into Menu bits */
+    box-sizing: border-box;	/* Leave here... */
+}
+* { /* Move into Menu bits */
+    margin: 0;
+    padding: 0;
 }
 
 .header-bar, .navbar {
