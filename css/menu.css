@@ -2,7 +2,7 @@
 * {
     box-sizing: border-box;	/* Leave here... */
 }
-* { /* Move into Menu bits */
+*, .margininit { /* Move into Menu bits */
     margin: 0;
     padding: 0;
 }
